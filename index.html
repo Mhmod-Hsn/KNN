@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>K Nearest Neighbour</title>
+    <style>
+        textarea{
+            max-height: 200px;
+            min-height: 70px;
+        }
+
+
+        @keyframes blink {
+            0% { box-shadow: 0 0 40px #ff3c5c; }
+            50% { box-shadow: 0 0 0; }
+            100% { box-shadow: 0 0 40px #ff3c5c; }
+        }
+
+        @-webkit-keyframes blink {
+            0% { box-shadow: 0 0 40px #ff3c5c; }
+            50% { box-shadow: 0 0 0; }
+            100% { box-shadow: 0 0 40px #ff3c5c; }
+        }
+
+        .blink {
+            -webkit-animation: blink 3.0s linear infinite;
+            animation: blink 3.0s linear infinite;
+        }
+
+
+    </style>
+    <link href="css/bootstrap4-neon-glow.min.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+
+<div>
+    <div class="col-sm-8 offset-2 mt-5">
+
+        <div class="ht-tm-codeblock">
+            <div class="ht-tm-element card border-primary mb-3 text-center">
+                <span class="ht-tm-element hal-9000 blink d-block mx-auto mt-4"></span>
+
+                <div class="card-body">
+                    <div class="container">
+                        <!--input 1-->
+                        <div class="form-group row">
+                            <label for="class1" class="col-sm-2 col-form-label">class 1</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="class1"  AUTOCOMPLETE="off" value="[1,2],[2,3],[3,1]">
+                            </div>
+                        </div>
+
+                        <!--input 2-->
+                        <div class="form-group row">
+                            <label for="class2" class="col-sm-2 col-form-label">class 2</label>
+                            <div class="col-sm-10">
+                                <input  type="text" class="form-control" id="class2" AUTOCOMPLETE="off" value="[5,6],[7,7],[8,6]">
+                            </div>
+                        </div>
+
+                        <!--new point-->
+                        <div class="form-group row">
+                            <label for="new_point" class="col-sm-2 col-form-label">New Point</label>
+                            <div class="col-sm-10">
+                                <input  type="text" class="form-control" id="new_point" placeholder="enter input text" AUTOCOMPLETE="off" value="3,5">
+                            </div>
+                        </div>
+
+                        <!--K-->
+                        <div class="form-group row">
+                            <label for="k" class="col-sm-2 col-form-label">K</label>
+                            <div class="col-sm-10">
+                                <input  type="number" class="form-control" id="k" placeholder="enter input text" AUTOCOMPLETE="off" value="3">
+                            </div>
+                        </div>
+
+                        <!--new class-->
+                        <div class="form-group row">
+                            <label for="new_class" class="col-sm-2 col-form-label">result class</label>
+                            <div class="col-sm-10">
+                                <input  type="text" class="form-control" id="new_class" placeholder="result will be show here" AUTOCOMPLETE="off">
+                            </div>
+                        </div>
+
+
+
+                        <button type="button" id="get-result-btn" class="btn btn-outline-primary btn-block">Get Result</button>
+                        this project was made by: <a href="https://www.facebook.com/Mhmod.Hsn55">Mahmoud Hassan</a> and available only for educational purposes
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+        <!--   input-->
+
+
+
+        <!--  results-->
+
+
+
+
+        <!--  buttons-->
+
+
+
+
+
+</div>
+
+<!--modal -->
+<!--
+
+<div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title"><span class="
+glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
+                    Error</h4>
+            </div>
+            <div class="modal-body">
+                <p>Error in data intry</p>
+                <p>Insert data in the following form </p>
+                <p>1,2,3,4,5,6,7,8,9,10,11,12</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+            </div>
+        </div>&lt;!&ndash; /.modal-content &ndash;&gt;
+    </div>&lt;!&ndash; /.modal-dialog &ndash;&gt;
+</div>&lt;!&ndash; /.modal &ndash;&gt;
+-->
+
+
+<!-- <script src="jquery-3.1.1.js"></script> -->
+<script src="js/jquery-1.11.3.min.js"></script>
+ <script src="js/bootstrap.js"></script>
+<!--<script src="js/bootstrap-3.3.7.js"></script>-->
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
